@@ -1,0 +1,24 @@
+# Dependencies & virtual environments
+**/node_modules
+**/.venv
+**/venv
+**/__pycache__
+**/*.pyc
+**/*.pyo
+
+# Secrets & local env files (inject via Render Environment Variables instead)
+**/.env
+*.env
+!**/.env.example
+
+# Build outputs & logs (frontend dist is built inside Docker Stage 1)
+frontend/dist
+**/*.log
+
+# Git & editor metadata
+.git
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+
